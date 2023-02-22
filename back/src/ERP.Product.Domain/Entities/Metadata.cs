@@ -8,7 +8,12 @@ namespace ERP.Product.Domain.Entities
 		public int Id { get; set; }
 
         [Column(TypeName = "jsonb")]
-        public Property[]? Properties { get; set; }
+        public Property[] Properties { get; set; } = Array.Empty<Property>();
+
+        public Metadata(Property[] properties)
+        {
+            Properties = properties;
+        }
     }
 }
 

@@ -9,9 +9,23 @@
   <ItemGroup>
     <None Remove="Entities\" />
     <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Commands\" />
+    <None Remove="Commands\Reponses\" />
+    <None Remove="Commands\Requests\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\Commands\" />
+    <None Remove="Interfaces\Commands\Handlers\" />
+    <None Remove="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Commands\Reponses\" />
+    <Folder Include="Commands\Requests\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Commands\" />
+    <Folder Include="Interfaces\Commands\Handlers\" />
+    <Folder Include="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
