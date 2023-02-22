@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("SampleDbConnection");
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ProductContext>(opt =>
-        opt.UseNpgsql(connectionString));
+        opt.UseNpgsql(connectionString, b=>b.MigrationsAssembly("ERP.Product.API")), ServiceLifetime.Transient);
 
 var app = builder.Build();
 
