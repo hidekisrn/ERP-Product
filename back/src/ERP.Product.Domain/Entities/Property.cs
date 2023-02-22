@@ -1,5 +1,4 @@
 ﻿using System;
-using ERP.Product.Domain.Enums;
 
 namespace ERP.Product.Domain.Entities
 {
@@ -7,7 +6,7 @@ namespace ERP.Product.Domain.Entities
 	{
 		public string Key { get; set; } = string.Empty;
 		public dynamic? Value { get; set; }
-		public TypeEnum Type { get; set; }
+		public int Type { get; set; }
     }
 }
 
